@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Linguagens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lista de Linguagens</h1>
+
+    <ul id="language-list"></ul>
+
+    <h2>Adicionar Nova Linguagem</h2>
+    <form id="add-language-form" onsubmit="submitNewLanguage(event)">
+        <label for="add-language-sigla">Sigla:</label>
+        <input type="text" id="add-language-sigla" name="sigla" required>
+        <label for="add-language-language">Língua:</label>
+        <input type="text" id="add-language-language" name="language" required>
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <h2>Atualizar Linguagem</h2>
+    <form id="edit-language-form" style="display: none;" onsubmit="submitUpdatedLanguage(event)">
+        <input type="hidden" id="edit-language-id" name="languageId">
+        <label for="edit-language-sigla">Nova Sigla:</label>
+        <input type="text" id="edit-language-sigla" name="sigla" required>
+        <label for="edit-language-language">Nova Língua:</label>
+        <input type="text" id="edit-language-language" name="language" required>
+        <button type="submit">Atualizar</button>
+        <button type="button" onclick="cancelUpdate()">Cancelar</button>
+    </form>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -30,6 +30,15 @@ public class Language {
 	public String getLanguage() {
 		return language;
 	}
+	
+
+	public int getLanguageId() {
+		return languageId;
+	}
+
+	public void setLanguageId(int languageId) {
+		this.languageId = languageId;
+	}
 
 	public void setLanguage(String language) {
 		this.language = language;

@@ -1,0 +1,28 @@
+/* Estilos para a lista de linguagens */
+#language-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#language-list li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para os formulários de adição e atualização */
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+form button {
+    margin-top: 10px;
+}
